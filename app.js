@@ -16,5 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.listen(3000, '127.0.0.1');
+console.log('Node server running on port 3000');
 module.exports = app;
